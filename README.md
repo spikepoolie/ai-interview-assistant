@@ -1,4 +1,4 @@
-# ![AI Interview Assistant](public/ai-assistant-readme.png) AI Interview Assistant
+# ![AI Interview Assistant](./assets/ai-assistant-readme.png) AI Interview Assistant
 
 AI Interview Assistant is a full-stack web application that simulates real-world interview scenarios by allowing users to practice answering questions and receive instant, AI-generated feedback. It’s powered by OpenAI and LangChain and built with a modern React + Node.js stack.
 
@@ -66,10 +66,10 @@ The backend (Node.js + LangChain) takes the answer and question, runs it through
 
 ## 🧪 Example Question Answer Input
 
-![Input](public/ai-assistant-readme-input.png)
+![Input](./assets/ai-assistant-readme-input.png)
 
 ---
 
 ## 🧪 Example Feedback Output
 
-![Output](public/feedback.png)
+![Output](./assets/feedback.png)
