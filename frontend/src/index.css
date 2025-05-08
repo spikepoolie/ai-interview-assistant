@@ -1,0 +1,360 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+
+.interview-container {
+  max-width: 100%;
+  padding: 2rem;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* consistent spacing between children */
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+label {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Input, Textarea, Buttons */
+.input-box,
+.textarea-box,
+select {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #d3dce6;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.textarea-box {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Section Containers */
+.question-container,
+.feedback-container {
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+.input-box,
+.textarea-box,
+.btn,
+select {
+  transition: all 0.2s ease-in-out;
+}
+
+.feedback-container h3,
+.feedback-container h4 {
+  margin-top: 1rem;
+}
+
+.feedback-text {
+  margin-bottom: 1rem;
+}
+
+.grade {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+/* Mode Switch Styling */
+.question-mode-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.question-mode-switch label {
+  display: flex;
+  align-items: center;
+}
+
+.question-mode-switch input[type="radio"],
+.question-mode-switch input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+  .interview-container {
+    max-width: 640px;
+    padding: 2.5rem;
+  }
+
+  .btn {
+    width: auto;
+  }
+}
+
+/* Custom Radio & Checkbox Button Styles */
+.toggle-option {
+  padding: 0.5rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  font-weight: 500;
+}
+
+.toggle-option.selected {
+  border-color: #3498db;
+  background-color: #eaf4fd;
+  color: #3498db;
+}
+
+.toggle-option:hover {
+  background-color: #f2f9ff;
+}
+
+.question-mode-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.hidden-radio {
+  display: none;
+}
+
+.question-answer-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.clearRefreshButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 0
+}
+
+.job-role-switch {
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    padding: 0;
+    font-size: inherit;
+  }
+
+  .link-button {
+    text-decoration: underline;
+    background: none;
+    border: none;
+    color: #3498db;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+  }
+
+  .job-role-switch {
+    font-weight: 500;
+    margin-left: 0.25rem;
+  }
+
+  .job-role-section {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay-content {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .paste-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+  }
+  
+  .paste-popup {
+    background: white;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  .close-popup-btn {
+    margin-top: 1rem;
+    background-color: #3498db;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .fade-in {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  .fade-out {
+    animation: fadeOut 0.3s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    to {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* Full viewport height */
+  /* Optional: background color */
+}
+
+.ai-assistant {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid #d3dce6;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  /* space below header */
+}
+
+.header-container h1 {
+  margin: 0;
+  line-height: 1.2;
+  /* optional: make title spacing tighter */
+  margin-bottom: 4px;
+  /* reduce space below the heading */
+}
+
+.user-info {
+  margin: 0;
+  /* remove default margin */
+  font-size: 1rem;
+  color: #333;
+}
+
+.aiImage {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.improvement-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.improvement-item {
+  margin-bottom: 0.4rem;
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
