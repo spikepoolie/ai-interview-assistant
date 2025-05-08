@@ -1,0 +1,63 @@
+[2025-05-06T23:40:43.150Z] Question: Can you provide an example of a challenging case you worked on as a criminal lawyer, and how you successfully navigated through the legal complexities to achieve a favorable outcome for your client?
+Answer: Certainly. I once defended a client falsely accused of armed robbery based on a mistaken eyewitness identification. The case was complex due to the emotional weight and limited physical evidence. I successfully challenged the reliability of the identification through expert testimony on memory distortion and presented alibi evidence supported by surveillance footage. The jury returned a not-guilty verdict, clearing my client of all charges.
+
+[2025-05-06T23:51:16.390Z] Question: Can you provide an example of a successful content strategy you have implemented, including the goals you set, the tactics you used, and the results achieved?
+Answer: Certainly. I once defended a client falsely accused of armed robbery based on a mistaken eyewitness identification. The case was complex due to the emotional weight and limited physical evidence. I successfully challenged the reliability of the identification through expert testimony on memory distortion and presented alibi evidence supported by surveillance footage. The jury returned a not-guilty verdict, clearing my client of all charges.
+
+[2025-05-07T04:54:42.472Z] Question: Can you provide an example of a time when you successfully managed a challenging client relationship, and how you were able to effectively resolve any issues that arose?
+Answer: a challenging client relationship, and how you were able to effectiv
+
+[2025-05-07T15:54:53.222Z] Question: What challenges do you often face as a Data Engineer?
+Answer: As a data engineer, I often face challenges ensuring data pipelines are reliable, scalable, and efficient.
+Handling inconsistent or messy data from multiple sources requires strong validation and cleaning strategies.
+Balancing real-time processing with performance optimization is a constant focus.
+I also prioritize staying up to date with evolving tools and best practices to deliver robust solutions.
+
+[2025-05-07T15:55:40.727Z] Question: How do you stay updated in your field as a Data Engineer?
+Answer: As a data engineer, I often face challenges ensuring data pipelines are reliable, scalable, and efficient.
+Handling inconsistent or messy data from multiple sources requires strong validation and cleaning strategies.
+Balancing real-time processing with performance optimization is a constant focus.
+I also prioritize staying up to date with evolving tools and best practices to deliver robust solutions.
+
+[2025-05-07T15:59:16.172Z] Question: Can you describe a complex data pipeline or ETL process you have designed and implemented in the past, including the technologies and tools you used and any challenges you faced during the project?
+Answer: export default function QuestionDropDown({ question, setQuestion, questions, setSelectedPredefinedQuestion }) {
+  const handleChange = (e) => {
+    setQuestion(e.target.value);
+    setSelectedPredefinedQuestion(e.target.value); // ✅ this enables the submit button
+  };
+
+  return (
+    <div className="question-dropdown">
+      <label htmlFor="predefinedQuestion">Select a question:</label>
+      <select
+        id="predefinedQuestion"
+        className="input-box"
+        value={question}
+        onChange={handleChange}
+      >
+        <option value="">Choose a question</option>
+        {questions.map((q, index) => (
+          <option key={index} value={q}>
+            {q}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+}
+
+[2025-05-07T15:59:29.338Z] Question: Can you describe a complex data pipeline or ETL process you have designed and implemented in the past, including the technologies and tools you used and any challenges you faced during the project?
+Answer: As a data engineer, I often face challenges ensuring data pipelines are reliable, scalable, and efficient.
+Handling inconsistent or messy data from multiple sources requires strong validation and cleaning strategies.
+Balancing real-time processing with performance optimization is a constant focus.
+I also prioritize staying up to date with evolving tools and best practices to deliver robust solutions.
+
+[2025-05-08T21:47:03.640Z] Question: Can you walk me through your process for creating an animated sequence from concept to completion, including how you collaborate with other team members and meet deadlines?
+Answer: Can you walk me through your process for creating an animated sequence from concept to completion, including how you collaborate
+
+[2025-05-08T21:48:51.700Z] Question: Can you walk me through your process for creating an animated sequence from concept to completion, including how you collaborate with other team members and meet deadlines?
+Answer: Can you walk me through your process for creating an animated sequence from concept to completion, including how you collaborate with other team members and meet deadlines?
+
+[2025-05-08T22:05:43.144Z] Question: Can you provide an example of a complex augmented reality project you've developed in the past, and walk us through the technical challenges you faced and how you overcame them?
+Answer: ovide an example of a complex augmented reality project you've developed in the past, and walk us through the technical challenge
+
