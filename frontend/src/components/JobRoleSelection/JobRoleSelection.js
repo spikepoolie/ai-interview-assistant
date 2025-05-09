@@ -2,7 +2,7 @@ import React from "react";
 
 const JobRoleSelection = ({jobRole, jobRoles, setJobRole, typeJobRole, SwitchView}) => {
    return (
-    <div className="job-role-section">
+    <div>
         <label htmlFor="jobRole">
           {typeJobRole ? (
             <>

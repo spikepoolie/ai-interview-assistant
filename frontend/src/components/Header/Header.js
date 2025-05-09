@@ -5,11 +5,12 @@ const Header = ({ userInfo }) => {
     <div className="header-container">
         <img src={AiAssistant} alt="AI Assistant" className="aiImage" />
         <div>
-            <h1>AI Interview Assistant</h1>
+            <h1 className="header-title">AI Interview Assistant</h1>
             {userInfo && (
-            <p className="user-info">
-                <span><strong>Candidate name:</strong></span> {userInfo.name} | <span><strong>Email:</strong></span> {userInfo.email}
-            </p>
+              <p className="user-info">
+                <span className="info-name"><strong>Candidate:</strong> {userInfo.name}</span>
+                <span className="info-email"><strong>Email:</strong> {userInfo.email}</span>
+              </p>
             )}
         </div>
     </div>

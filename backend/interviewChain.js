@@ -23,8 +23,7 @@ Candidate's Answer: {answer}
 
 Your job is to:
 1. Analyze the overall quality, clarity, and relevance of the answer.
-2. Determine whether the answer appears to be original (human-written) or potentially copied or generated using AI or from the internet.
-3. Justify your assessment in the feedback if the answer shows signs of being copied or generic.
+2. Justify your assessment in the feedback if the answer shows signs of being copied or generic.
 
 Then follow this exact format:
 

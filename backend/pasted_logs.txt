@@ -61,3 +61,15 @@ Answer: Can you walk me through your process for creating an animated sequence f
 [2025-05-08T22:05:43.144Z] Question: Can you provide an example of a complex augmented reality project you've developed in the past, and walk us through the technical challenges you faced and how you overcame them?
 Answer: ovide an example of a complex augmented reality project you've developed in the past, and walk us through the technical challenge
 
+[2025-05-09T20:20:34.413Z] Question: Can you walk me through a complex blockchain project you've worked on, including the specific technical challenges you faced and how you overcame them?
+Answer: <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
