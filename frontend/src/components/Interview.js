@@ -120,20 +120,17 @@ export default function Interview() {
         SwitchView={SwitchView}
       />
 
-      {jobRole && (
+      {jobRole && normalizedJobRoleKey && (
         <JobRole questionMode={questionMode} setQuestionMode={setQuestionMode} />
       )}
 
-      {questionMode === 'predefined' && (
-        <>
-          {console.log('Using key:', jobRole, '→', normalizedJobRoleKey)}
-          <QuestionDropDown
-            question={question}
-            setQuestion={setQuestion}
-            questions={jobRoles[normalizedJobRoleKey].map((item) => item.question)}
-            setSelectedPredefinedQuestion={setSelectedPredefinedQuestion}
-          />
-        </>
+      {questionMode === 'predefined' && normalizedJobRoleKey && (
+        <QuestionDropDown
+          question={question}
+          setQuestion={setQuestion}
+          questions={jobRoles[normalizedJobRoleKey].map((item) => item.question)}
+          setSelectedPredefinedQuestion={setSelectedPredefinedQuestion}
+        />
       )}
 
       {(question || customQuestion || selectedPredefinedQuestion) && (
