@@ -43,7 +43,6 @@ export default function Interview() {
   }, [jobRole, questionMode]);
 
   const handleUserSubmit = ({ name, email }) => {
-    console.log('Received from popup:', name, email);
     setUserInfo({ name, email });
   };
 

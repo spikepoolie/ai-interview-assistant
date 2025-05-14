@@ -43,7 +43,6 @@ app.post('/api/log-paste', (req, res) => {
   const { pastedText, question } = req.body;
   const logLine =
     `[${new Date().toISOString()}] Question: ${question || '[N/A]'}\nAnswer: ${pastedText}\n\n`;
-console.log(logLine)
   fs.appendFile('pasted_logs.txt', logLine, (err) => {
     if (err) return res.status(500).send('Failed to log paste');
     res.send('Logged');

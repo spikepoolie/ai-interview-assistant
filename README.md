@@ -17,6 +17,23 @@ This project demonstrates practical use of large language models (LLMs) in a use
 
 ---
 
+## Credentials Back end - .env
+
+Create a .env file in the root of the backend folder and add this:
+
+- OPENAI_API_KEY=[replace with your key]
+
+---
+
+## Credentials Front end - .env
+
+Create a .env file in the root of the frontend folder and add this:
+
+- REACT_APP_API_URL=http://localhost:5005 (or any other port you are running your Express server)
+- REACT_APP_ENV=development
+
+---
+
 ## 🌟 Key Features
 
 - 🧑‍💼 Collects candidate name and email
@@ -30,7 +47,6 @@ This project demonstrates practical use of large language models (LLMs) in a use
 - 🧠 Feedback uses prompt templates with ChatPromptTemplate
 - 🚫 Paste alert popup (optional)
 - 🧽 Clean, modular React components
-- 🔒 Fully local and secure (no data stored)
 
 ---
 
