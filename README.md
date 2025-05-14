@@ -17,6 +17,28 @@ This project demonstrates practical use of large language models (LLMs) in a use
 
 ---
 
+git clone https://github.com/spikepoolie/ai-interview-assistant.git
+
+cd ai-interview-assistant
+
+## Frontend
+
+cd frontend
+
+npm install
+
+npm run start
+
+## Backend
+
+cd backend
+
+npm install
+
+node app.js
+
+---
+
 ## Credentials Back end - .env
 
 Create a .env file in the root of the backend folder and add this:
