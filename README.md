@@ -81,7 +81,7 @@ Create a .env file in the root of the frontend folder and add this:
 | AI Engine     | OpenAI API (`gpt-4`)    |
 | Orchestration | LangChain               |
 | HTTP Client   | Axios                   |
-| Deployment    | Localhost / ngrok-ready |
+| Deployment    | Localhost / AWS |
 
 ---
 
